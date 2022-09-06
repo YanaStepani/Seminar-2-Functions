@@ -20,7 +20,7 @@ void CompareNumbersByMultiplicity ()
     }
     else 
     {
-        System.Console.WriteLine($"Числа {number_1} и {number_2} не кратные. Остаток = " + ((number_1 - (number_1 - (number_1 % number_2)))));
+        System.Console.WriteLine($"Числа {number_1} и {number_2} не кратные. Остаток = " + (number_1 % number_2));
     }
 }
 CompareNumbersByMultiplicity();
