@@ -12,13 +12,17 @@ void SquereRootOf2Numbers()
     int number_2 = Convert.ToInt32(Console.ReadLine());
 
     // проверка условия
-    if (number_1 == number_2 * number_2 || number_2 == number_1 * number_1)
+    if (number_1 == number_2 * number_2)
     {
-        System.Console.WriteLine($"{number_1}, {number_2} - да");
+        System.Console.WriteLine($"{number_1} является квадратом {number_2}.");
+    }
+    else if(number_2 == number_1 * number_1)
+    {
+         System.Console.WriteLine($"{number_2} является квадратом {number_1}.");
     }
     else
     {
-        System.Console.WriteLine($"{number_1}, {number_2} - нет");
+        System.Console.WriteLine($"{number_1} и {number_2} не являются квадратами одного из двух.");
     }
 }
 
